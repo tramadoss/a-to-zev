@@ -1,0 +1,20 @@
+---
+title: "A to ZEV"
+author: "Trisha Ramadoss"
+date: '2022-10-22'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo = FALSE, results = FALSE, message =-FALSE}
+library(tidyverse)
+tract_income <- sf::st_read(dsn = "income_distribution/income_distribution.shp")
+
+```
+
+```{r echo = FALSE, message = FALSE}
+mapview::mapview(tract_income, zcol = "pr__200")
+```
