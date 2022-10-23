@@ -25,7 +25,11 @@ labels <- sprintf(
   income_map$nickname, income_map$revenue_label , round(income_map$taxable_millionaires,1)
 ) %>% lapply(htmltools::HTML)
 
-m <- leaflet(income_map) %>% addPolygons(
+m <- leaflet(income_map) %>% 
+  setView(-122.3, 37.8, 9) %>% 
+  #addTiles() %>%
+  addProviderTiles(providers$CartoDB.PositronOnlyLabels) %>% 
+  addPolygons(
   fillColor = ~pal(taxable_millionaires),
   weight = 0.01,
   opacity = 1,

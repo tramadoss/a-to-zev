@@ -24,4 +24,8 @@ How do we calculate these numbers?
 
 The [American Community Survey](https://www.census.gov/programs-surveys/acs) reports how many people make over $200,000 annually by where they live. Using information from California's tax board, we can distribute the number of people making over \$2 million annually & the amount of money they would pay proportionally to each community.
 
-### EV Infrastructure
+### EV Infrastructure {.tabset}
+
+#### Chargers Now
+
+#### Future Possibilities
