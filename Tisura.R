@@ -7,7 +7,7 @@ library(sf)
 library(readr)
 
 ##Shapefile 
-my_sf <- st_as_sf(map, coords = c('Longitude', 'Latitude'),crs =4269 )
+#my_sf <- st_as_sf(map, coords = c('Longitude', 'Latitude'),crs =4269 )
 roads <- st_read(file.path("Data/Shape_file","shn2014v3_Segments.shp"))
 Counties <- st_read(file.path("Data/CA_Counties","CA_Counties_TIGER2016.shp"))
 Highways <- st_read(file.path("Data/SHN_Lines","HWY_SHN_Lines.shp"))
@@ -28,7 +28,7 @@ Substation_buffer <- st_buffer(Substations,4828.03)
 Boundary <- st_read(file.path("Data/data-2","District_201511.shp"))
 
 ##Creating uffer around stations 
-buffer <- st_buffer(my_sf, 40234) # for 25 miles converted to meters
+#buffer <- st_buffer(my_sf, 40234) # for 25 miles converted to meters
 buffer2 <- st_buffer(my_sub,40234) # 25 miles converted to meters
 
 
