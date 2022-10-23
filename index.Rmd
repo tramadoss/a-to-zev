@@ -7,15 +7,27 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## A Closer Look at Taxing Millionaires for EVs with Prop 30 {.tabset}
+## A Closer Look at Taxing Millionaires for EVs & Wildfire Prevention with Prop 30 {.tabset}
+
+### Prop 30
+
+**Provides Funding for Programs to Reduce Air Pollution and Prevent Wildfires by Increasing Tax on Personal Income Over $2 Million. Initiative Statute.**
+
+"Prop. 30 would impose a 1.75% personal income tax increase on the top-earning Californians — for the share of their income above $2 million — per year to fund a suite of climate programs. The goal is to clean up the state’s dirty air and help meet ambitious greenhouse gas reduction targets." [Cal Matters](https://calmatters.org/california-voter-guide-2022/propositions/prop-30-income-tax-electric-cars/)
+
+![](https://lao.ca.gov/ballot/2022/prop30-fig1.png){width=50%}
+
+From the [Legislative Analyist's Office](https://lao.ca.gov/BallotAnalysis/Proposition?number=30&year=2022)
 
 ### Funding
+
+**Where do 2+ millionaires live & how much would they be taxed?**
 
 The following map shows how many millionaires would be taxed under this proposition & the subsequent income that would be raised in 2020 USD.
 
 ```{r echo = FALSE, results = FALSE, warning = FALSE,message =-FALSE}
-source("income_map.R")
-source("charger_map.R")
+source("maps/income_map.R")
+source("maps/charger_map.R")
 ```
 
 ```{r echo = FALSE, message = FALSE}
@@ -26,12 +38,32 @@ m
 
 The [American Community Survey](https://www.census.gov/programs-surveys/acs) reports how many people make over \$200,000 annually by where they live. Using information from California's tax board, we can distribute the total number of people making over \$2 million annually in the state & the amount of money they would pay proportionally to each community based on the percent of people making over \$200,000.
 
-### EV Infrastructure 
+### EV Infrastructure
+
+**Where could future EV chargers be built?**
+
+The "Current DCFC" layer is a map of the publicly available DC fast chargers across California. Almost all fit the "Corridor Charger" criteria (they are within 1 mile of a highway). The area aroud the charger stations indicates a radius of 25 miles. The NEVI guidelines want charging stations installed every 50 miles. 
+
+Notice the gaps in California. The interesting and debatable part comes now. How should we define a "Charger gap"? and estimate where the extra revenue from Prop 30 funds should be deployed (keeping in mind NEVI formula funds will be deployed for the gaps). 
+
+The "Existing Substations" layer is where electric grid substations are located across California. The general guidance is to install a DCFC charging station within 2-3 miles of a substation. (The light blue circles are a buffer zone of 3 miles from the substations.)
+
+New chargers could be built anywhere gaps exist in the charging network where electric substations already exist.
 
 ```{r echo = FALSE, message = FALSE}
 c
 ```
 
-**How do we calculate this?**
+**Where does this data come from?**
 
 The
+
+### Wildfires
+
+The map below highlights Fire Hazard Severity Zones in California:
+
+![](https://osfm.fire.ca.gov/media/6557/fhszs_map.jpg){width=50%}
+
+**Where does this data come from?**
+
+The maps is from the [Department of Forestry and Fire Protection](https://osfm.fire.ca.gov/divisions/community-wildfire-preparedness-and-mitigation/wildland-hazards-building-codes/fire-hazard-severity-zones-maps/) website
