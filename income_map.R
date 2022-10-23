@@ -1,7 +1,7 @@
 library(tidyverse)
 library(leaflet)
 
-income_data <- sf::st_read(dsn = "income_distribution/income_distribution.shp")
+income_data <- sf::st_read(dsn = "data/income_distribution/income_distribution.shp")
 
 new_vars <- income_data %>% sf::st_drop_geometry() %>% 
   mutate(nickname = substr(NAME, 8, (nchar(NAME) -12))) %>% 
