@@ -47,7 +47,7 @@ c <- leaflet() %>%
     ) %>% 
   addCircleMarkers(data = Substations, 
                    weight = 3,
-                   radius = 5,
+                   radius = 1,
                    fillColor = "steelblue",
                    color = "steelblue",
                    group = "Substations"
