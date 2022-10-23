@@ -1,4 +1,5 @@
 ---
+title: "A to ZEV"
 output: html_document
 ---
 
@@ -6,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## A to ZEV: A Closer Look at Prop 30 {.tabset}
+## Prop 30: A Closer Look Taxing Millionaires for EVs {.tabset}
 
 ### Funding
 
@@ -20,9 +21,9 @@ source("income_map.R")
 m
 ```
 
-How do we calculate these numbers?
+**How do we calculate these numbers?**
 
-The [American Community Survey](https://www.census.gov/programs-surveys/acs) reports how many people make over $200,000 annually by where they live. Using information from California's tax board, we can distribute the number of people making over \$2 million annually & the amount of money they would pay proportionally to each community.
+The [American Community Survey](https://www.census.gov/programs-surveys/acs) reports how many people make over \$200,000 annually by where they live. Using information from California's tax board, we can distribute the total number of people making over \$2 million annually in the state & the amount of money they would pay proportionally to each community based on the percent of people making over \$200,000.
 
 ### EV Infrastructure {.tabset}
 

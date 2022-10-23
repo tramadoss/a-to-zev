@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <title>CA_Substations_Final</title>
+                <geoform>vector digital data</geoform>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>The California Energy Commission (CEC) Electric Substation geospatial data layer has been created to display the locations of substations in California. It contains point features representing transmission substations and some distribution substations in California. These substations are fed by electric transmission lines and are used to step-up and step-down the voltage of electricity being carried by the lines, or simply to connect together various lines and maintain reliability of supply. These substations can be located on the surface within fenced enclosures, within special purpose buildings, on rooftops (in urban environments), or underground. A substation feature is also used to represent a location where one transmission line &amp;quot;taps&amp;quot; into another. When used in association with the CEC Power Plant and CEC Electric Transmission Lines geospatial data layers, viewers can analyze the geographic relationships with the substation across utilities, counties and state. The data has been gathered from two sources - internal CEC data and the Department of Homeland Security's - Homeland Infrastructure Foundation-Level Data (HIFLD). The CEC data was created from a project spanning many years and was previously updated in 2016. The data was derived from utility companies and USGS topographic map. Some of the data was rectified from GE and Platts substation geospatial data. The sources for the substation point digitizing are including sub-meter resolution of Digital Globe, Bing, Google, ESRI and NAIP aerial imageries, with scale at least 1:10,000. Occasionally, USGS Topographic map, Google Street View and Bing Bird's Eye are used to verify the precise location of a facility.The substation data, as one of the CEC's California Energy Infrastructure spatial data will be used to: 1. Support the CEC/STEP/Strategic Transmission Planning and Corridor Designation Office in corridor study and transmission line siting; 2. Support the CEC staffs' various analysis by providing general geographic reference information; 3. Enhance communication between and among government agencies on emergency management, resource management, economic development, and environmental study;4. Provide illustration of critical infrastructure spatial data to the public or other agencies in hard copy format. </abstract>
+            <purpose>Electric substations in California compiled from California Energy Commission and Department of Homeland Security Homeland Infrastructure Foundation-Level Data (HIFLD)</purpose>
+        </descript>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Electric</themekey>
+                <themekey>CAOpenData</themekey>
+                <themekey>California Energy Commission</themekey>
+                <themekey>California Natural Resources Agency</themekey>
+                <themekey>Substation</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>https://www.energy.ca.gov/conditions-of-use</useconst>
+        <datacred>California Energy Commission - GIS Unit
+Department of Homeland Security HIFLD </datacred>
+        <native>Esri ArcGIS 12.8.3.29751</native>
+    </idinfo>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>Entity point</sdtstype>
+                <ptvctcnt>0</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>CA_Substations_Final</enttypl>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Shape</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Coordinates defining the features.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CEC_Sub_ID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Status</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Owner</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Source</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Type</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>HIFLD_ID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Name</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Max_Voltage</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ZIP_CODE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>COUNTY</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>CITY</attrlabl>
+            </attr>
+        </detailed>
+    </eainfo>
+    <metainfo>
+        <metd>20220202</metd>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
