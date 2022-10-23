@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Prop 30: A Closer Look Taxing Millionaires for EVs {.tabset}
+## A Closer Look at Taxing Millionaires for EVs with Prop 30 {.tabset}
 
 ### Funding
 
@@ -15,6 +15,7 @@ The following map shows how many millionaires would be taxed under this proposit
 
 ```{r echo = FALSE, results = FALSE, warning = FALSE,message =-FALSE}
 source("income_map.R")
+source("charger_map.R")
 ```
 
 ```{r echo = FALSE, message = FALSE}
@@ -25,8 +26,12 @@ m
 
 The [American Community Survey](https://www.census.gov/programs-surveys/acs) reports how many people make over \$200,000 annually by where they live. Using information from California's tax board, we can distribute the total number of people making over \$2 million annually in the state & the amount of money they would pay proportionally to each community based on the percent of people making over \$200,000.
 
-### EV Infrastructure {.tabset}
+### EV Infrastructure 
 
-#### Chargers Now
+```{r echo = FALSE, message = FALSE}
+c
+```
 
-#### Future Possibilities
+**How do we calculate this?**
+
+The
