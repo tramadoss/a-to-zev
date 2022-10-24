@@ -69,7 +69,9 @@ c
 
 **Where does this data come from?**
 
-The
+Charging station data is from the Alternative Fuels Data Center [Electric Vehicle Charging Station Locations](https://afdc.energy.gov), filtered for publicly-accessible DCFC, non-Tesla chargers only 
+
+Substation data is from the California Energy Commission [California Electric Substations](https://data.ca.gov/dataset/california-electric-substations1)
 
 ### Wildfires
 
