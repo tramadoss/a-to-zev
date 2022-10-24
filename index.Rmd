@@ -34,6 +34,19 @@ source("maps/charger_map.R")
 m
 ```
 
+**How will revenue grow**
+
+The numbers above were calculated using tax data from 2020. Assuming a 3% interest rate, we project tax revenue until 2043.
+
+```{r echo=FALSE, message=FALSE, fig.width=4, fig.height=3}
+RevenueI <- readxl::read_excel("data/tax/tax_data.xlsx",    sheet = "by_year")
+
+ggplot(data = RevenueI) + geom_bar(aes(x= year , y=revenue_billions), stat = "identity", fill = "seagreen") +
+  theme_minimal() +
+  labs(y = "Revenue in Billions USD", x = "Year")
+
+```
+
 **How do we calculate these numbers?**
 
 The [American Community Survey](https://www.census.gov/programs-surveys/acs) reports how many people make over \$200,000 annually by where they live. Using information from California's tax board, we can distribute the total number of people making over \$2 million annually in the state & the amount of money they would pay proportionally to each community based on the percent of people making over \$200,000.
