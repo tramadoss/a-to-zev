@@ -5,7 +5,8 @@ Analysis of Prop 30 for the UC Davis CA Election 2022 Data Challenge
 
 ## Data Visualization Tool
 
-https://tramadoss.github.io/a-to-zev/
+[![logo](https://github.com/tramadoss/a-to-zev/blob/main/logo.png?raw=true)](https://tramadoss.github.io/a-to-zev/)
+
 
 ## Definitions and Data Sources
 
