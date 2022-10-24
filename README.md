@@ -42,9 +42,9 @@ The full data processing steps can be found [here]().
 
 ## Contributors
 
-Jean Ji, Ph.D. Candidate, Energy Systems, Electric Vehicle Research Center, UC Davis 
-
 Tisura Gamage, Ph.D. Student, Transportation Technology and Policy, Electric Vehicle Research Center, UC Davis
+
+Jean Ji, Ph.D. Candidate, Energy Systems, Electric Vehicle Research Center, UC Davis 
 
 Trisha Ramadoss, Ph.D. Student, Transportation Technology and Policy, Electric Vehicle Research Center, UC Davis
 
