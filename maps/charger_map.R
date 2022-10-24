@@ -32,30 +32,30 @@ c <- leaflet() %>%
     fillOpacity = 0.7,
     color = "black"
     ) %>% 
+  addPolylines(
+    data = roads,
+    color = "gray",
+    weight = 2,
+  ) %>% 
+  addCircles(data = Substations, 
+             weight = 3,
+             radius = 4828.03,
+             fillColor = "steelblue",
+             fillOpacity = 0.8,
+             color = NA,
+             group = "Existing Substations"
+  )%>% 
   addCircles(data = my_sub, 
              weight = 1,
              radius = 40234,
              fillColor = "lightgreen",
-             fillOpacity = 0.2,
-             color = NA,
+             fillOpacity = 0.1,
+             color = "lightgreen",
              group = "Current DCFC"
-  )%>% 
-  addPolylines(
-    data = roads,
-    color = "goldenrod",
-    weight = 2,
-    ) %>% 
-  addCircles(data = Substations, 
-                   weight = 3,
-                   radius = 4828.03,
-                   fillColor = "steelblue",
-                   fillOpacity = 0.8,
-                   color = NA,
-                   group = "Existing Substations"
   )%>% 
   addCircleMarkers(data = my_sub, 
              weight = 1,
-             radius = 5,
+             radius = 4,
              fillColor = "seagreen",
              fillOpacity = 0.8,
              color = NA,
@@ -67,4 +67,4 @@ c <- leaflet() %>%
     overlayGroups = c("Current DCFC", "Existing Substations"),
     options = layersControlOptions(collapsed = FALSE)
   )
-
+c
