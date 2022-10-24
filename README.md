@@ -5,7 +5,8 @@ Analysis of Prop 30 for the UC Davis CA Election 2022 Data Challenge
 
 ## Data Visualization Tool
 
-https://tramadoss.github.io/a-to-zev/
+[![logo](https://github.com/tramadoss/a-to-zev/blob/main/logo.png?raw=true)](https://tramadoss.github.io/a-to-zev/)
+
 
 ## Definitions and Data Sources
 
@@ -42,9 +43,9 @@ The full data processing steps can be found [here]().
 
 ## Contributors
 
-Jean Ji, Ph.D. Candidate, Energy Systems, Electric Vehicle Research Center, UC Davis 
-
 Tisura Gamage, Ph.D. Student, Transportation Technology and Policy, Electric Vehicle Research Center, UC Davis
+
+Jean Ji, Ph.D. Candidate, Energy Systems, Electric Vehicle Research Center, UC Davis 
 
 Trisha Ramadoss, Ph.D. Student, Transportation Technology and Policy, Electric Vehicle Research Center, UC Davis
 
